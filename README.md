@@ -24,7 +24,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Learn More
 
-[![Watch the video](https://raw.githubusercontent.com/itiwariarun/Code-Translator/master/public/videoframe_0.png)](https://raw.githubusercontent.com/itiwariarun/Code-Translator/master/public/Converter.mp4)
+[![Watch the video](https://raw.githubusercontent.com/itiwariarun/Code-Translator/master/public/videoframe_0.png)](https://www.loom.com/share/5d8b75308d714b80855997e84277daad?sid=47ec007e-5050-436e-b0ca-b15e652bde8b)
 
 To learn more about Next.js, take a look at the following resources:
 
