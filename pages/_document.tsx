@@ -11,8 +11,8 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <html lang="en">
-        <head>
+      <Html lang="en">
+        <Head>
           <title>Code Convertor</title>
           <link rel="manifest" href="/manifest.json" />
           <link rel="icon" href="/favicon.svg" />
@@ -45,12 +45,12 @@ class MyDocument extends Document {
             <meta property="og:type" content="website" />
             <meta property="og:locale" content="en_US" />
             <link rel="canonical" href="https://ai-program-translator.vercel.app/" />
-        </head>
+        </Head>
         <body>
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }
