@@ -6,6 +6,29 @@
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "en-US",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "screenshots": [
+    {
+      "src": "/screenshot1.png",
+      "sizes": "1280x720",
+      "type": "image/png"
+    },
+    {
+      "src": "/screenshot2.png",
+      "sizes": "1280x720",
+      "type": "image/png"
+    }
+  ],
+  "categories": [
+    "productivity",
+    "utilities",
+    "tools"
+  ],
   "icons": [
     {
       "src": "/favicon.svg",
@@ -15,7 +38,11 @@
     {
       "src": "/favicon.svg",
       "sizes": "512x512",
-      "type": "image/svg+xml"
+      "type": "image/svg+xml",
+      "purpose": "maskable"
     }
-  ]
+  ],
+  "splash_pages": null,
+  "display_override": ["window-controls-overlay", "minimal-ui"],
+  
 }
