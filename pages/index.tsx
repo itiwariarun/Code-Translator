@@ -98,7 +98,7 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden flex flex-col items-center justify-center">
       <BackgroundGradientAnimation>
-        <div className="flex flex-col z-40 items-center justify-center">
+        <div className="flex flex-col z-[9999] items-center justify-center">
           <div className="text flex flex-col gap-2.5 mt-10 mx-6 items-center justify-center text-center">
             <h1 className="font-sans text-5xl justify-center text-slate-100 font-bold">
               Code Translator
