@@ -35,50 +35,50 @@ export const BackgroundGradientAnimation = ({
 }) => {
   const interactiveRef = useRef<HTMLDivElement>(null);
 
-  const [curX, setCurX] = useState(0);
-  const [curY, setCurY] = useState(0);
-  const [tgX, setTgX] = useState(0);
-  const [tgY, setTgY] = useState(0);
-  useEffect(() => {
-    document.body.style.setProperty(
-      "--gradient-background-start",
-      gradientBackgroundStart
-    );
-    document.body.style.setProperty(
-      "--gradient-background-end",
-      gradientBackgroundEnd
-    );
-    document.body.style.setProperty("--first-color", firstColor);
-    document.body.style.setProperty("--second-color", secondColor);
-    document.body.style.setProperty("--third-color", thirdColor);
-    document.body.style.setProperty("--fourth-color", fourthColor);
-    document.body.style.setProperty("--fifth-color", fifthColor);
-    document.body.style.setProperty("--pointer-color", pointerColor);
-    document.body.style.setProperty("--size", size);
-    document.body.style.setProperty("--blending-value", blendingValue);
-  }, []);
+  // const [curX, setCurX] = useState(0);
+  // const [curY, setCurY] = useState(0);
+  // const [tgX, setTgX] = useState(0);
+  // const [tgY, setTgY] = useState(0);
+  // useEffect(() => {
+  //   document.body.style.setProperty(
+  //     "--gradient-background-start",
+  //     gradientBackgroundStart
+  //   );
+  //   document.body.style.setProperty(
+  //     "--gradient-background-end",
+  //     gradientBackgroundEnd
+  //   );
+  //   document.body.style.setProperty("--first-color", firstColor);
+  //   document.body.style.setProperty("--second-color", secondColor);
+  //   document.body.style.setProperty("--third-color", thirdColor);
+  //   document.body.style.setProperty("--fourth-color", fourthColor);
+  //   document.body.style.setProperty("--fifth-color", fifthColor);
+  //   document.body.style.setProperty("--pointer-color", pointerColor);
+  //   document.body.style.setProperty("--size", size);
+  //   document.body.style.setProperty("--blending-value", blendingValue);
+  // }, []);
 
-  useEffect(() => {
-    function move() {
-      if (!interactiveRef.current) {
-        return;
-      }
-      setCurX(curX + (tgX - curX) / 20);
-      setCurY(curY + (tgY - curY) / 20);
-      interactiveRef.current.style.transform = `translate(${Math.round(
-        curX
-      )}px, ${Math.round(curY)}px)`;
-    }
+  // useEffect(() => {
+  //   function move() {
+  //     if (!interactiveRef.current) {
+  //       return;
+  //     }
+  //     setCurX(curX + (tgX - curX) / 20);
+  //     setCurY(curY + (tgY - curY) / 20);
+  //     interactiveRef.current.style.transform = `translate(${Math.round(
+  //       curX
+  //     )}px, ${Math.round(curY)}px)`;
+  //   }
 
-    move();
-  }, [tgX, tgY]);
+  //   move();
+  // }, [tgX, tgY]);
 
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
-    if (interactiveRef.current) {
-      const rect = interactiveRef.current.getBoundingClientRect();
-      setTgX(event.clientX - rect.left);
-      setTgY(event.clientY - rect.top);
-    }
+    // if (interactiveRef.current) {
+    //   const rect = interactiveRef.current.getBoundingClientRect();
+    //   // setTgX(event.clientX - rect.left);
+    //   // setTgY(event.clientY - rect.top);
+    // }
   };
 
   const [isSafari, setIsSafari] = useState(false);
@@ -112,7 +112,7 @@ export const BackgroundGradientAnimation = ({
         </defs>
       </svg>
       <div className={cn("", className)}>{children}</div>
-      <div
+{/*       <div
         className={cn(
           "gradients-container h-full w-full blur-lg",
           isSafari ? "blur-2xl" : "[filter:url(#blurMe)_blur(40px)]"
@@ -175,7 +175,7 @@ export const BackgroundGradientAnimation = ({
             )}
           ></div>
         )}
-      </div>
+      </div> */}
     </div>
   );
 };
