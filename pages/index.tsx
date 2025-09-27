@@ -137,7 +137,7 @@ export default function Home() {
         </div>
        </BackgroundGradientAnimation>
       <p className="font-sans flex items-center gap-2.5 mt-5 pb-5">
-        Powered by{" "}
+        Developed by{" "}
         <a
           className="ref-link text-[#C53AAE] flex relative items-center"
           href="http://github.com/itiwariarun"
